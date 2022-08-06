@@ -1,0 +1,16 @@
+tests=int(input())
+for i in range(tests):
+    count=0
+    inp=int(input())
+    for j in range(1,inp+1):
+        if(inp%j==0):
+            n=j
+            temp=n
+            rev=0
+        while(n>0):
+             dig=n%10
+             rev=rev*10+dig
+             n=n//10
+        if(temp==rev):   
+             count=count+1
+    print(count)
